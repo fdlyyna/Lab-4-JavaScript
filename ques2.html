@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Input</title>
+    <h2>Question 2</h2>
+</head>
+<body>
+
+<input type="text" id="userInput" placeholder="Enter a number">
+<button onclick="checkInput()">Check</button>
+
+<script>
+    function checkInput() {
+        // Get the value from the input field
+        let input = document.getElementById("userInput").value;
+
+        // Check if the input is a number
+        if (isNaN(input)) {
+            alert("Please insert a number!");
+        } else {
+            input = Number(input); // Convert input to a number
+            if (input < 10) {
+                alert("The number is lower than 10");
+            } else if (input > 10) {
+                alert("The number is higher than 10");
+            } else {
+                alert("The number is 10");
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

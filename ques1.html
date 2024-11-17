@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Content</title>
+    <h2>Question 1</h2>
+</head>
+<body>
+
+<div id="myElement">
+    <p>Welcome to my website!</p>
+</div>
+
+<!-- Button to change the text -->
+<button onclick="changeText()">Click me to change text</button>
+
+<script>
+    // Function to change the content of the <p> element
+    function changeText() {
+        document.getElementById("myElement").getElementsByTagName("p")[0].innerText = "Hello there!";
+    }
+</script>
+
+</body>
+</html>
